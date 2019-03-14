@@ -5,6 +5,10 @@ import 'whatsapp_screens/chat_screen.dart';
 import "whatsapp_screens/status_screen.dart";
 
 class WhatsAppHome extends StatefulWidget {
+
+  var cameras;
+  WhatsAppHome(this.cameras);
+
   @override
   _WhatsAppHomeState createState() => _WhatsAppHomeState();
 }
@@ -25,14 +29,13 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
       appBar: AppBar(
         title: Text("WhatsApp"),
         elevation: 0.7,
-
         actions: <Widget>[
           IconButton(
-            onPressed: (){},
+            onPressed: () {},
             icon: Icon(Icons.search),
           ),
           IconButton(
-            onPressed: (){},
+            onPressed: () {},
             icon: Icon(Icons.more_vert),
           )
         ],
@@ -41,7 +44,6 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
           controller: _tabController,
           indicatorColor: Colors.white,
           labelPadding: EdgeInsets.only(right: 10.0, left: 10.0),
-
           tabs: <Widget>[
             Tab(
               icon: Icon(Icons.camera_alt),
@@ -62,17 +64,21 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
       body: TabBarView(
         controller: _tabController,
         children: <Widget>[
-          CameraScreen(),
+          //CameraScreen(widget.cameras),
           ChatScreen(),
           StatusScreen(),
           CallScreen(),
         ],
       ),
-    floatingActionButton: FloatingActionButton(
-    onPressed: () => print("Contatos"),
-    backgroundColor: Theme.of(context).accentColor,
-    child: Icon(Icons.message, color: Colors.white, size: 25.0,),
-    ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => print("Contatos"),
+        backgroundColor: Theme.of(context).accentColor,
+        child: Icon(
+          Icons.message,
+          color: Colors.white,
+          size: 25.0,
+        ),
+      ),
     );
   }
 }

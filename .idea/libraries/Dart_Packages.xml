@@ -16,6 +16,13 @@
             </list>
           </value>
         </entry>
+        <entry key="camera">
+          <value>
+            <list>
+              <option value="D:/src/flutter/.pub-cache/hosted/pub.dartlang.org/camera-0.4.2/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="charcode">
           <value>
             <list>
@@ -154,6 +161,7 @@
     <CLASSES>
       <root url="file://D:/src/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.0.8/lib" />
       <root url="file://D:/src/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-1.0.4/lib" />
+      <root url="file://D:/src/flutter/.pub-cache/hosted/pub.dartlang.org/camera-0.4.2/lib" />
       <root url="file://D:/src/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.1.2/lib" />
       <root url="file://D:/src/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib" />
       <root url="file://D:/src/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-0.1.2/lib" />
